@@ -4,5 +4,5 @@ from urls import routes
 
 application = Application(routes, fronts)
 with make_server('', 8000, application) as httpd:
-    print('start server ... ')
+    print('start server ...')
     httpd.serve_forever()
